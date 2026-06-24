@@ -1,0 +1,14 @@
+name: ${PROJECT_NAME}
+services:
+  dev:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - type: bind
+        source: ..
+        target: /workspece
+    tty: true
+    stdin_open: true
+    env_file:
+      - .env
