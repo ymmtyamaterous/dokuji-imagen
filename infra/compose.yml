@@ -7,7 +7,7 @@ services:
     volumes:
       - type: bind
         source: ..
-        target: /workspece
+        target: /workspace
     tty: true
     stdin_open: true
     env_file:
