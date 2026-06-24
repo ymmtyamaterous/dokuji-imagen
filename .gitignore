@@ -1,3 +1,5 @@
 .env
 tmp
 devcontainer.json
+
+__pycache__
